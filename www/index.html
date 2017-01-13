@@ -38,15 +38,26 @@
     <!--
       The nav bar that will be updated as we navigate between views.
     -->
-    <ion-nav-bar class="bar-stable">
-      <ion-nav-back-button>
-      </ion-nav-back-button>
-    </ion-nav-bar>
+    <ion-header-bar align-title="left" class="bar-stable">
+      <div class="range">
+        <i class="icon ion-volume-low"></i>
+        <input type="range" name="volume">
+        <i class="icon ion-volume-high"></i>
+      </div>
+    </ion-header-bar>
     <!--
       The views will be rendered in the <ion-nav-view> directive below
       Templates are in the /templates folder (but you could also
       have templates inline in this html file if you'd like).
     -->
-    <ion-nav-view></ion-nav-view>
+
+
+    <ion-footer-bar align-title="left" class="bar-stable">
+      <div class="item range">
+        <i class="icon ion-volume-low"></i>
+        <input type="range" name="volume">
+        <i class="icon ion-volume-high"></i>
+      </div>
+    </ion-footer-bar>
   </body>
 </html>
