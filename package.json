@@ -3,6 +3,7 @@
   "version": "1.1.1",
   "description": "fpvrover: An Ionic project",
   "dependencies": {
+    "ionic-framework": "2.0.0-beta.2",
     "gulp": "^3.5.6",
     "gulp-sass": "^2.0.4",
     "gulp-concat": "^2.2.0",

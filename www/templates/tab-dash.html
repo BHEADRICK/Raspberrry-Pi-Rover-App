@@ -1,7 +1,24 @@
 <ion-view view-title="Dashboard">
   <ion-content class="padding">
+    <div class="bar bar-header bar-light">
+      <div class="item range">
+        <i class="icon ion-volume-low"></i>
+        <input min="-255" max="255" ng-model="left" ng-change="changeDirectionLeft(left)" on-release="reset()" type="range" name="volume_left">
+        <i class="icon ion-volume-high"></i>
+        {{left}}
+      </div>
+    </div>
 
-hello world
 
 
+
+    <div class="bar bar-footer bar-light">
+      <div class="item range">
+        <i class="icon ion-volume-low"></i>
+        <input min="-255" max="255" ng-model="right" ng-change="changeDirectionRight(right)"  on-release="reset()"  type="range" name="volume_right">
+        <i class="icon ion-volume-high"></i>
+        {{right}}
+      </div>
+    </div>
+  </ion-content>
 </ion-view>
