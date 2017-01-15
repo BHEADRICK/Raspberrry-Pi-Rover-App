@@ -1,24 +1,25 @@
 <ion-view view-title="Dashboard">
-  <ion-content class="padding">
-    <div class="bar bar-header bar-light">
-      <div class="item range">
-        <i class="icon ion-volume-low"></i>
-        <input min="-255" max="255" ng-model="left" ng-change="changeDirectionLeft(left)" on-release="reset()" type="range" name="volume_left">
-        <i class="icon ion-volume-high"></i>
-        {{left}}
-      </div>
-    </div>
+    <ion-content class="padding" scroll="false">
+        <div class="content-wrapper">
+            <div class="range control-left ">
+
+                <input min="-255" max="255" ng-model="left" ng-change="changeDirectionLeft(left)" on-release="reset()"
+                       type="range" name="volume_left">
+
+            </div>
 
 
+                <iframe width="100%" height="100%" ng-src="http://192.168.1.82/html/" frameborder="0"></iframe>
+
+          
+            <div class=" range control-right ">
+
+                <input min="-255" max="255" ng-model="right" ng-change="changeDirectionRight(right)" on-release="reset()"
+                       type="range" name="volume_right">
+
+            </div>
+        </div>
 
 
-    <div class="bar bar-footer bar-light">
-      <div class="item range">
-        <i class="icon ion-volume-low"></i>
-        <input min="-255" max="255" ng-model="right" ng-change="changeDirectionRight(right)"  on-release="reset()"  type="range" name="volume_right">
-        <i class="icon ion-volume-high"></i>
-        {{right}}
-      </div>
-    </div>
-  </ion-content>
+    </ion-content>
 </ion-view>
